@@ -24,7 +24,7 @@ arr.sort((a, b) => {
 let cnt = 1;
 let cur = 0;
 
-for (let i = 0; i < n; i++) {
+for (let i = 1; i < n; i++) {
   if (arr[cur][1] <= arr[i][0]) {
     cnt += 1;
     cur = i;
