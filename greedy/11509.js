@@ -9,11 +9,9 @@ let arrow = Array.from({length: 100001}, () => 0);
 let temp = 0;
 for (let x of data) {
   if (arrow[x] > 0) {
-    console.log('if', temp++, x);
     arrow[x] -= 1;
     arrow[x - 1] += 1;
   } else {
-    console.log('else', temp++, x);
     arrow[x - 1] += 1;
     cnt += 1;
   }
