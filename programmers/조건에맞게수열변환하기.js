@@ -14,8 +14,6 @@ function solution(arr) {
     
     const isDifferentValue = temp.some((el, i) => el !== mappedArr[i]);
     
-    console.log(isDifferentValue);
-
     if (!isDifferentValue) {
       break;
     }
