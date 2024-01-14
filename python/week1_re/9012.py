@@ -27,7 +27,7 @@ for i in range(tc):
     stack = []
 
     for char in s:
-        if stack and stack[-1] == '(' and char == ')' 
+        if stack and stack[-1] == '(' and char == ')':
             stack.pop()
             continue
         stack.append(char)
